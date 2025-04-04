@@ -426,7 +426,7 @@ router.post('/register-send-email', Upload.single('avartar'), async (req, res) =
         const result = await newUser.save()
         if (result) { //Gửi mail
             const mailOptions = {
-                from: "thanghtph31577@fpt.edu.vn", //email gửi đi
+                from: "lephongtx205@gmail.com", //email gửi đi
                 to: result.email, // email nhận
                 subject: "Đăng ký thành công", //subject
                 text: "Cảm ơn bạn đã đăng ký", // nội dung mail
